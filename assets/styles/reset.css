@@ -1,0 +1,60 @@
+/* reset.css */
+
+/* ყველა ელემენტისთვის ნაგულისხმევი ზღვარი და შიდა სივრცე მოიხსნას */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ძირითადი HTML ელემენტები */
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* სურათები არ გაცდენენ კონტეინერს */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ბმულები არ უნდა ჰქონდეთ ხაზები */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ჩამონათვლები */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ფორმის ელემენტები თანაბარი სტილით იწყებენ */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* სარეზერვო სტილი სათაურებისთვის */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* ტაბულის და scrollbar-ის მოცილება სურვილისამებრ */
+body {
+  overflow-x: hidden;
+}

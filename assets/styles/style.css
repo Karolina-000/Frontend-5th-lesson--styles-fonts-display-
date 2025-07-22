@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Roboto-Slab";
+  src: url("../fonts/RobotoSlab-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Noto Serif Georgian";
+  src: url("../fonts/NotoSerifGeorgian_Condensed-ExtraBold.ttf");
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.logo {
+  color: #00aaff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.wrapper {
+  background-image: url("../img/background-cover.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.profile-card {
+  background-color: black;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4081e3;
+  box-shadow: 0 4px 12px #4081e3;
+}
+
+.profile-content h1 {
+  margin-bottom: 10px;
+  color: #4081e3;
+  font-family: "Noto Serif Georgian", serif;
+}
+
+.profile-content h2 {
+  margin-bottom: 10px;
+  font-family: "Roboto-Slab" serif;
+}
+
+.profile-content p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hire-me {
+  padding: 10px 25px;
+  background-color: transparent;
+  border-radius: 8px;
+  font-weight: bold;
+  color: rgb(64, 129, 227);
+  border: 2px solid rgb(64, 129, 227);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hire-me:hover {
+  transform: scale(1.05);
+  background-color: #470707;
+  color: white;
+  box-shadow: 0 0 25px #470707;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  border: 2px solid rgb(64, 129, 227);
+  background-color: white;
+  padding: 3px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background-color: black;
+  font-size: 14px;
+}
+
+.profile-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+}
+/* Responsive */
+@media (max-width: 500px) {
+  .profile-card {
+    padding: 25px 20px;
+  }
+}
